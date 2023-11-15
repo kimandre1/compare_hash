@@ -28,7 +28,7 @@ def compare_hash(filename):
         print("file isn't here anymore!")
 
 parser = argparse.ArgumentParser(description="Store, check and compare sha256 value of a given file. use -h for instructions.")
-parser.add_argument("--compare", help='add to compare files, usage: --compare "filename1" "filename"', action ="store_true")
+parser.add_argument("--compare", help='add to compare files, usage: --compare "filename"', action ="store_true")
 parser.add_argument("--file", help="input filename, required field", required=True)
 parser.add_argument("--store", help="add to store file hash to filename.hash", action ="store_true")
 args = parser.parse_args()
